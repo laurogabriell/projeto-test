@@ -1,0 +1,8 @@
+<h2>Lista de Desatres</h2>
+<ul class ="disaster">
+    <li *ngFor="let disaste of dist" 
+      [class.selected]="disaste === selectDisaster" 
+      (click)="onSelect(disaste)">
+        <span class="badge">{{disaste.id}}</span> {{disaste.nome}}
+    </li>
+</ul>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="home">
+    <h1><a class="button" href="">{{title}}</a></h1>
+    <h2>Bem vindo a central de Herois</h2>
+  </div>
+  <nav>
+    <a class="button" routerLink="/dashboard">Dashboard</a>
+
+    <a class="button" routerLink="/heroes-list"> Central de Herois</a>
+     
+    <a class="button" routerLink="/disaster-list">Central de Desatres</a> 
+  </nav>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</body>
+</html>
